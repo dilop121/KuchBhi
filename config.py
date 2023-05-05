@@ -14,16 +14,16 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5673255098").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/XcuteboyX/TRYING-BEST-2")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/the_update_silencer")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/x_team_immortals_x")
