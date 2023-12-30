@@ -104,6 +104,7 @@ async def settings_back_markup(
             KA = random.choice(CHAMPU)
         except:
             OWNER = None
+            KA = None  # Initialize KA here
         buttons = private_panel(_, app.username, OWNER)
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
@@ -119,6 +120,7 @@ async def settings_back_markup(
         return await CallbackQuery.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(buttons)
         )
+
 
 
 ## Audio and Video Quality
